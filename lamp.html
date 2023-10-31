@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lamp</title>
+    <link rel="stylesheet" href="lamp.css">
+</head>
+<body>
+  <div class="general">
+    <nav>
+        <img src="./images/vue-glowing-removebg-preview.png" alt="logo" class="logo"><span>Vue lamp</span>
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">Description</a></li>
+            <li><a href="">comments</a></li>
+        </ul>
+        <button type="button" onclick="toggleBtn()" id="btn" ><span></span></button>
+    </nav>
+    <div class="image">
+        <img src="./images/light16.jpeg" alt="bulb" class="bulb">
+        <img src="./images/light17.png" alt="light" class="light" id="lightOn">
+        
+    </div>
+    <div class="info">
+        <h1>Vue lighting</h1>
+        <p>Enlighten your premises</p>
+        <a href="">check out our products</a>
+        <div class="control">
+            <p>04</p>
+            <div class="line"><span></span></div>
+            <p>05</p>
+        </div>
+    </div>
+   
+  </div>
+  <script>
+    var btn=document.getElementById('btn');
+    var lightOn= document.getElementById('lightOn');
+    function toggleBtn(){
+        btn.classList.toggle("active");
+        lightOn.classList.toggle("on");
+    }
+  </script>  
+</body>
+</html>
